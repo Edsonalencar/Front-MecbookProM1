@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&display=swap');
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: black;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+.main {
+    max-width: 90%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3.6rem;
+    margin-bottom: 12.5rem;
+}
+
+header img {
+    margin-left: -8rem;
+}
+
+header a {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #ffffffe3;
+    margin-left: 8rem;
+    transition: 0.3s;
+}
+
+header a:hover {
+    color: #ffffffb0;
+}
+
+header .nav-list a.active {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.content {
+    text-align: center;
+    width: 100%;
+}
+
+.content img {
+    width: 100%;
+}
+
+.content h1 {
+    font-size: 7.2rem;
+    font-weight: 300;
+}
+
+.content p {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 6.4rem;
+}
+
+.content a {
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 600;
+    padding: 1.4rem 6.9rem;
+    border-radius: 3.4rem;
+    background-color: #147CE5;
+    margin-top: -1.6rem;
+}
+
+.content a:hover {
+    background-color: #348feb;
+}
+
+.container .quest {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 14.2rem;
+    margin-bottom: 6.4rem;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle div {
+    width: 2.5rem;
+    height: 0.1rem;
+    background-color: #ffffff;
+    margin: 0.8rem;
+    transition: 0.5s;
+}
+
+/* Responsividade */
+
+@media (max-width: 1050px) {
+
+    .content h1 {
+        font-size: 5.8rem;
+        font-weight: 300;
+    }
+    
+    .content p {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 6.4rem;
+    }
+
+    .content a {
+        font-size: 2rem;
+        padding: 1.2rem 6rem;
+    }
+}
+
+@media (max-width: 850px) {
+
+    header a, .container .quest {
+        font-size: 1.4rem;
+    }
+
+    .content h1 {
+        font-size: 5rem;
+    }
+    
+    .content p  {
+        font-size: 1.5rem;
+    }
+
+    .content a {
+        font-size: 1.5rem;
+        padding: 1.1rem 4.7rem;
+    }
+}
+
+@media (max-width: 650px) {
+
+    header a, .container .quest {
+        font-size: 1.2rem;
+    }
+
+    header img {
+        width: 2.4rem;
+    }
+    
+    .content h1 {
+        font-size: 4.4rem;
+    }
+    
+    .content p  {
+        font-size: 1.5rem;
+    }
+
+    .content a {
+        font-size: 1.5rem;
+        padding: 1rem 4.5rem;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Nas Bar*/
+
+    .nav-list {
+        position: absolute;
+        top: 7rem;
+        right: 0rem;
+        width: 20vh;
+        height: 60vh;
+        background-color: #000000c4;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 2rem;
+        transition: 0.3s;
+        transform: translateX(100%);
+    }
+
+    .nav-list.active {
+        transition: 0.5s ease-in;
+        transform: translateX(0);
+    }
+
+    .nav-list a {
+        display: flex;
+        position: relative;
+        top: 5rem;
+        right: 6.5rem;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 6rem;
+        transition: 0.3s;
+        transform: translateX(100%);
+    }
+
+    .nav-list.active a:hover {
+        right: 9rem;
+        transition: 0.3s;      
+    }
+
+    .menu-toggle.active .line1 {
+        transition: 0.5s;
+        transform: rotate(-45deg) translate(-8px, -2px);
+    }
+
+    .menu-toggle.active .line2 {
+        transition: 0.5s;
+        transform: rotate(45deg) translate(-8px, 2px);
+    }
+}
+
+@media (max-width: 550px) {
+
+    header a, .container .quest {
+        font-size: 1.2rem;
+    }
+    
+    .content h1 {
+        font-size: 3.5rem;
+    }
+    
+    .content p  {
+        font-size: 1.2rem;
+    }
+
+    .content a {
+        font-size: 1rem;
+        padding: 1rem 4rem;
+    }
+}

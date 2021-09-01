@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/apple-logo.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/0b643bc2ed.js" crossorigin="anonymous"></script>
+    <title>MacBook Pro M1</title>
+</head>
+<body>
+    <div class="main">
+        <Header>
+            <a href="index.html"><img src="img/apple-logo.svg" alt="Aple-Logo"></a>
+            <div class="menu-toggle" onclick="navBar()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+            </div>
+
+            <nav class="nav-list">
+                <a href="#" class="active" onclick="active(0)">Mac</a>
+                <a href="#" onclick="active(1)">iPad</a>
+                <a href="#" onclick="active(2)">iPhone</a>
+                <a href="#" onclick="active(3)">Watch</a>
+            </nav>
+        </Header>
+
+        <div class="container">
+            <div class="content">
+                <h1 id="title">MacBook Pro M1</h1>
+                <p>Máis rápido do que nunca </p>
+                <img src="img/macbookpro.svg" alt="MacBook Pro M1">
+                <a href="#">Comprar</a>
+            </div>
+            <p class="quest">Por que Mac?</p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
